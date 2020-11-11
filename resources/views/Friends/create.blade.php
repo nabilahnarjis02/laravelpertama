@@ -1,4 +1,4 @@
-@extends('friends.app')
+@extends('layouts.app')
 
 @section('title', 'friends')
 
@@ -29,8 +29,4 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-
-
-
 @endsection
