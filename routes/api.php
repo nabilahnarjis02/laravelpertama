@@ -17,12 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('', [CobaController::class, 'index']);
-Route::post('', [CobaController::class, 'index']);
 Route::resources([
     'friends' => CobaController::class,
-    'groups' => GroupsController::class,
+    'groups' => GroupsController::class
 ]);
-
-Route::get('', [CobaController::class, 'show']);
-Route::put('/friends/{id}', [CobaController::class, 'update']);
-Route::delete('/friends/{id}', [CobaController::class, 'destroy']);
